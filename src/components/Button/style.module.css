@@ -1,0 +1,18 @@
+.button {
+   width: 200px;
+   height: 50px;
+   cursor: pointer;
+   color: #fff;
+   background-color: darkblue;
+   border: none;
+   margin: 50px;
+}
+
+.button:hover {
+   color: black;
+   background-color: rgb(108, 203, 224);
+}
+.button:active {
+   color: rgb(222, 16, 16);
+   background-color: rgb(151, 87, 229);
+}
