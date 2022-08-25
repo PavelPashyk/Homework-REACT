@@ -31,7 +31,6 @@ function App() {
       </div>
       <div className="app-block block-title">
         <Title text="Sign in" />
-        <Title text="nSign in" />
       </div>
       <div className="app-block block-user">
         <UserName userName="Pavel Pashyk" />
