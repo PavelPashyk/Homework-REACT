@@ -1,14 +1,14 @@
-import style from "./style.module.css";
+import styles from "./style.module.css";
 
 interface Props {
-   text: string;
-   onClick: () => void;
+  text: string;
+  onClick: () => void;
 }
 
 export const Button = (props: Props) => {
-   return (
-      <button className={style.button} onClick={props.onClick}>
-         {props.text}
-      </button> 
-   )
+  return (
+    <button className={styles.btn} onClick={props.onClick}>
+      {props.text}
+    </button>
+  );
 };

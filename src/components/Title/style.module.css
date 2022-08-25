@@ -1,0 +1,14 @@
+.textBlock {
+width: 300px;
+height: 100px;
+background-color: rgba(10, 233, 117, 0.3);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.textStyle {
+font-weight: 700;
+font-size: 60px;
+user-select: none;
+}

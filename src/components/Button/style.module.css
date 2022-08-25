@@ -1,18 +1,25 @@
-.button {
-   width: 200px;
-   height: 50px;
-   cursor: pointer;
-   color: #fff;
-   background-color: darkblue;
-   border: none;
-   margin: 50px;
+.btn {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00ffff, #000099, #00ffff);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  transition: color .2s;
 }
 
-.button:hover {
-   color: black;
-   background-color: rgb(108, 203, 224);
+.btn:hover {
+  color: black;
+  font-size: 18px;
+  background: linear-gradient(0deg, #000099, #00ffff, #000099);
 }
-.button:active {
-   color: rgb(222, 16, 16);
-   background-color: rgb(151, 87, 229);
+
+.btn:active {
+  background: linear-gradient(0deg, #2c2ca1, #edffff, #2c2ca1);
 }

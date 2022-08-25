@@ -1,29 +1,42 @@
-import './App.css';
-import { Button } from './components/Button';
-import { Input } from './components/Input';
+import "./App.css";
+import { Button } from "./components/Button";
+import { Input } from "./components/Input";
+import { Title } from "./components/Title";
+import { UserName } from "./components/UserName";
+
+const onClickLogin = () => {
+  alert("Hello 1");
+};
+
+const onClickSingUp = () => {
+  alert("Hello 2");
+};
+
+const onClickLogout = () => {
+  alert("Hello 3");
+};
 
 function App() {
-
-  const onClickPrimary = () => {
-    alert("Hello 1")
-  }
-  const onClickSecondary = () => {
-    alert("Hello 2")
-  }
-  const onClickSecondary2 = () => {
-    alert("Hello 3")
-  }
-
   return (
-    <div className="App">
-      <Button text="Primary" onClick={onClickPrimary}/>
-      <Button text="Secondary" onClick={onClickSecondary}/>
-      <Button text="Secondary 2" onClick={onClickSecondary2}/>
-      <div>
-
-        <Input value={554343}/>
-        <Input value={6746}/>
-        <Input value={12346677}/>
+    <div className="app">
+      <div className="app-block block-btn">
+        <Button text="Login" onClick={onClickLogin} />
+        <Button text="Sing up" onClick={onClickSingUp} />
+        <Button text="Logout" onClick={onClickLogout} />
+      </div>
+      <div className="app-block block-input">
+        <Input value={5486} placeholder={"string"} maxlength={10} />
+        <Input value={"Hello"} placeholder={"number"} />
+        <Input placeholder={"string"} maxlength={11} />
+      </div>
+      <div className="app-block block-title">
+        <Title text="Sign in" />
+      </div>
+      <div className="app-block block-user">
+        <UserName userName="Pavel Pashyk" />
+        <UserName userName="Artem Nord" />
+        <UserName userName="Darya Wills" />
+        <UserName userName="Olga" />
       </div>
     </div>
   );
