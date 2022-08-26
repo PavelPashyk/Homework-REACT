@@ -1,0 +1,25 @@
+.btn {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00ffff, #000099, #00ffff);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  transition: color .2s;
+}
+
+.btn:hover {
+  color: black;
+  font-size: 18px;
+  background: linear-gradient(0deg, #000099, #00ffff, #000099);
+}
+
+.btn:active {
+  background: linear-gradient(0deg, #2c2ca1, #edffff, #2c2ca1);
+}
