@@ -28,5 +28,13 @@
 }
 
 .innerBlockAllName {
-  background-color: blue;
+  background-color: inherit;
+}
+
+.isDarkBlock {
+  background-color: rgb(47, 25, 25);
+}
+
+.isDarkBlockInner {
+  background-color: rgb(148, 141, 139);
 }

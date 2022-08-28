@@ -1,14 +1,36 @@
-.textBlock {
-width: 300px;
-height: 100px;
-background-color: rgba(10, 233, 117, 0.3);
-display: flex;
-align-items: center;
-justify-content: center;
+.styleBlockTextOne {
+  width: 300px;
+  height: 100px;
+  background-color: rgba(10, 233, 117, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.textStyle {
-font-weight: 700;
-font-size: 60px;
-user-select: none;
+.styleTextOne {
+  font-weight: 700;
+  font-size: 40px;
+  user-select: none;
+}
+
+.styleBlockTextTwo {
+  width: 200px;
+  height: 90px;
+  background-color: rgba(10, 43, 233, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styleTextTwo {
+  font-weight: 400;
+  font-size: 55px;
+  user-select: none;
+  font-style: italic;
+  color: red;
+}
+
+.styleBlockTextTwo:not(:last-child),
+.styleBlockTextOne:not(:last-child) {
+  margin-right: 10px;
 }

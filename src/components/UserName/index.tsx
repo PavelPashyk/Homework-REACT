@@ -2,6 +2,7 @@ import styles from "./style.module.css";
 
 interface Props {
   userName: string;
+  isDark?: boolean;
 }
 
 export const UserName = (props: Props) => {
@@ -10,9 +11,17 @@ export const UserName = (props: Props) => {
   const initialsSecond = initials[1] ? initials[1][0].toUpperCase() : "";
 
   return (
-    <div className={styles.userNameBlock}>
+    <div
+      className={`${styles.userNameBlock} ${
+        props.isDark ? styles.isDarkBlock : null
+      }`}
+    >
       <div className={styles.userNameBlockInner}>
-        <h2 className={styles.innerBlockInitials}>
+        <h2
+          className={`${styles.innerBlockInitials} ${
+            props.isDark ? styles.isDarkBlockInner : ""
+          }`}
+        >
           {initialsFirst}
           {initialsSecond}
         </h2>
