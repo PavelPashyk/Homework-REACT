@@ -16,6 +16,7 @@
   border-bottom: none;
 }
 
+.block-clicker,
 .block-input,
 .block-btn {
   display: flex;
@@ -27,8 +28,10 @@
 .block-title {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+.block-post,
 .block-user {
   display: flex;
   flex-wrap: wrap;

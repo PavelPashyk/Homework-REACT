@@ -11,7 +11,7 @@
   font-weight: 700;
   font-size: 16px;
   border: none;
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .btn:hover {
@@ -22,4 +22,26 @@
 
 .btn:active {
   background: linear-gradient(0deg, #2c2ca1, #edffff, #2c2ca1);
+}
+
+[disabled] {
+  opacity: 0.3;
+}
+
+.btn:hover[disabled] {
+  background: linear-gradient(90deg, #00ffff, #000099, #00ffff);
+  color: white;
+  font-size: 16px;
+  box-shadow: none;
+}
+
+.btnStyleFirst:hover {
+  box-shadow: 0px 0px 9px 3px rgb(184, 48, 43);
+}
+.btnStyleSecond:hover {
+  box-shadow: 0px 0px 9px 3px rgb(136, 0, 255);
+}
+
+.btnStyleThird:hover {
+  box-shadow: 0px 0px 9px 3px rgb(0, 183, 255);
 }
