@@ -24,7 +24,7 @@ const onClickLogout = () => {
 function App() {
   return (
     <div className="app">
-      {/* <div className="app-block block-btn">
+      <div className="app-block block-btn">
         <Button text="Login" onClick={onClickLogin} type="btnStyleFirst" />
         <Button
           text="Sing up"
@@ -77,7 +77,7 @@ function App() {
       </div>
       <div className="app-block block-post">
         <PostCards posts={listPosts} />
-      </div> */}
+      </div>
       <div className="app-block block-emoji">
         <EmojiList emojies={emojies} />
       </div>
