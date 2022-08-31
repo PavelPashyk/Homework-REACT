@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 type stylesBlockText = "styleBlockTextOne" | "styleBlockTextTwo";
 type stylesText = "styleTextOne" | "styleTextTwo";
 
-interface Props {
+interface IProps {
   text: string;
   type: stylesBlockText;
   typeText: stylesText;
@@ -20,7 +20,7 @@ const getStylesBlockText = (type: stylesBlockText) => {
 const getStylesText = (typeText: stylesText) =>
   typeText === "styleTextOne" ? styles.styleTextOne : styles.styleTextTwo;
 
-export const Title = (props: Props) => {
+export const Title = (props: IProps) => {
   return (
     <div className={getStylesBlockText(props.type)}>
       <h1 className={getStylesText(props.typeText)}>{props.text}</h1>

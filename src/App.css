@@ -5,6 +5,15 @@
   margin: 0 auto;
 }
 
+li {
+  list-style-type: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .app-block {
   min-height: 200px;
   background-color: ghostwhite;
