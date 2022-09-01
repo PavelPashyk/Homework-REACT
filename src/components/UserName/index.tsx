@@ -1,11 +1,11 @@
 import styles from "./style.module.css";
 
-interface Props {
+interface IProps {
   userName: string;
   isDark?: boolean;
 }
 
-export const UserName = (props: Props) => {
+export const UserName = (props: IProps) => {
   const initials = props.userName.split(" ");
   const initialsFirst = initials[0][0].toUpperCase();
   const initialsSecond = initials[1] ? initials[1][0].toUpperCase() : "";

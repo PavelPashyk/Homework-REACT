@@ -1,10 +1,13 @@
 import "./App.css";
 import { Button } from "./components/Button";
 import { Clicker } from "./components/Clicker";
+import { EmojiList } from "./components/Emoji/EmojiList";
 import { Input } from "./components/Input";
 import { PostCards } from "./components/PostСards/ListPost";
 import { Title } from "./components/Title";
 import { UserName } from "./components/UserName";
+import { emojies } from "./mocks/emojies";
+import { listPosts } from "./mocks/listPosts";
 
 const onClickLogin = () => {
   alert("Hello 1");
@@ -73,7 +76,10 @@ function App() {
         <Clicker />
       </div>
       <div className="app-block block-post">
-        <PostCards />
+        <PostCards posts={listPosts} />
+      </div>
+      <div className="app-block block-emoji">
+        <EmojiList emojies={emojies} />
       </div>
     </div>
   );

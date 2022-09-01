@@ -1,0 +1,33 @@
+.emojiItem {
+  list-style-type: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 270px;
+  height: 130px;
+  font-family: "Alata", sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.emojiItem:hover {
+  background-color: lightskyblue;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  transform: translate(-5px, -5px);
+}
+
+.emojiItem p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emojiStyle {
+  font-size: 50px;
+  margin-right: 5px;
+}

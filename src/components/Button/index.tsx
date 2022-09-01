@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 
 type btnStyles = "btnStyleFirst" | "btnStyleSecond" | "btnStyleThird";
-interface Props {
+interface IProps {
   text: string;
   onClick: () => void;
   disabled?: boolean;
@@ -18,7 +18,7 @@ const getStyleBtn = (type: btnStyles) => {
   }
 };
 
-export const Button = (props: Props) => {
+export const Button = (props: IProps) => {
   return (
     <button
       className={`${styles.btn} ${getStyleBtn(props.type)}`}
