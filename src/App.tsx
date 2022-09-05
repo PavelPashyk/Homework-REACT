@@ -1,10 +1,13 @@
 import "./App.css";
 import { Button } from "./components/Button";
 import { Clicker } from "./components/Clicker";
+import { Converter } from "./components/Converter";
 import { EmojiList } from "./components/Emoji/EmojiList";
 import { Input } from "./components/Input";
 import { PostCards } from "./components/PostСards/ListPost";
+import { Time } from "./components/Time";
 import { Title } from "./components/Title";
+import { TodoList } from "./components/TodoList/TodoBox";
 import { UserName } from "./components/UserName";
 import { emojies } from "./mocks/emojies";
 import { listPosts } from "./mocks/listPosts";
@@ -80,6 +83,15 @@ function App() {
       </div>
       <div className="app-block block-emoji">
         <EmojiList emojies={emojies} />
+      </div>
+      <div className="app-block block-todo">
+        <TodoList />
+      </div>
+      <div className="app-block block-converter">
+        <Converter rate$={2.52} rateByn={0.4} />
+      </div>
+      <div className="app-block block-time">
+        <Time />
       </div>
     </div>
   );

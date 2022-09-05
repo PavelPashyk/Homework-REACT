@@ -1,0 +1,25 @@
+.currencyBlock{
+  width: 800px;
+  min-height: 150px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  
+}
+
+legend {
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}

@@ -17,7 +17,7 @@ li {
 .app-block {
   min-height: 200px;
   background-color: ghostwhite;
-  padding: 15px;
+  padding: 30px 15px;
   border-bottom: 1px solid black;
 }
 
@@ -45,4 +45,8 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.block-todo {
+
 }

@@ -28,7 +28,7 @@ export const EmojiList = (props: IProps) => {
   });
 
   return (
-    <div>
+    <>
       <div className={styles.InputSearch}>
         <Input
           value={text}
@@ -47,6 +47,6 @@ export const EmojiList = (props: IProps) => {
           );
         })}
       </ul>
-    </div>
+    </>
   );
 };
