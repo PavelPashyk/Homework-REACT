@@ -1,0 +1,46 @@
+.TodoItemBlock {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border: 1px solid #BFBFBF;
+  background-color: #dae7f1;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  transform: rotate(5deg);
+}
+
+.TodoItemBlock2 {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border: 1px solid #BFBFBF;
+  background-color: rgb(245 243 243);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  transform: rotate(-5deg);
+}
+
+.TodoItemHeader {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TodoItemHeader h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}  
+
+.TodoItemBody {
+  width: 100%;
+  height: 80%;
+  padding: 5px;
+  font-style: italic;
+  overflow: auto;
+}
+
+.TodoItemHeader input {
+  transform: scale(2);
+}
