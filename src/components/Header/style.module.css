@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  min-height: 150px;
+}
+
+.headerMenu {
+  width: inherit;
+  min-height: inherit;
+  position: relative;
+}
+
+.headerBoby {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.headerTop {
+  width: inherit;
+  min-height: inherit;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.menuTitleImg {
+  padding: 0px 5px 0px 20px;
+}
+
+.headerTitle {
+  margin-bottom: 0;
+  color: #007bff;
+}
+
+.headerBtn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}

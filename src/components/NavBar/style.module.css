@@ -1,0 +1,37 @@
+
+.navBarMenu {
+  width: 100%;
+  min-height: 200px;
+  background-color: #007bff;
+  padding: 50px;
+  display: flex;
+}
+
+.navBarBtn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.navBarBtn img {
+  width: inherit;
+  height: inherit;
+}
+
+.navBarList a{
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+.navBarList li {
+  margin-bottom: 10px;
+}
+
+.navBarList a:hover {
+  border-bottom: 2px solid white;
+}

@@ -3,6 +3,8 @@ import { Button } from "./components/Button";
 import { Clicker } from "./components/Clicker";
 import { Converter } from "./components/Converter";
 import { EmojiList } from "./components/Emoji/EmojiList";
+import { FormLogin } from "./components/FormLogin";
+import { Header } from "./components/Header";
 import { Input } from "./components/Input";
 import { PostCards } from "./components/PostСards/ListPost";
 import { Time } from "./components/Time";
@@ -92,6 +94,12 @@ function App() {
       </div>
       <div className="app-block block-time">
         <Time />
+      </div>
+      <div className="app-block block-main">
+        <Header />
+      </div>
+      <div className="app-block block-form">
+        <FormLogin />
       </div>
     </div>
   );
