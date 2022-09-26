@@ -1,0 +1,39 @@
+.blockForm {
+  max-width: 500px;
+  min-height: 600px;
+  background-color: transparent;
+  padding: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin:0 auto;
+  font-family: 'Raleway';
+  font-style: normal;
+}
+
+.titleForm {
+  font-weight: 700;
+  font-size: 25px;
+  color: #016EFC;
+  padding-bottom: 30px;
+}
+
+.textForm {
+  font-weight: 400;
+  font-size: 25px;
+  color: #254050;
+  line-height: 35px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.titreForm {
+  color: #016EFC;
+}
+
+a {
+  text-decoration: none;
+}
+

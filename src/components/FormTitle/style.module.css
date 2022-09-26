@@ -1,0 +1,33 @@
+.formTitle {
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.formTitleNotActiv {
+  text-decoration: none;
+  color: rgb(64, 123, 250);
+  margin: 5px;
+}
+
+.formTitle a:first-child {
+  position: relative;
+  margin-right: 10px;
+}
+
+.formTitle a:first-child::after {
+  content: "";
+  border-bottom: 3px solid black;
+  position: absolute;
+  right: -22px;
+  bottom: 10px;
+  rotate: 90deg;
+  width: 30px;
+}
+
+.formTitleActiv {
+  color: red;
+  text-decoration: none;
+  margin: 5px;
+}

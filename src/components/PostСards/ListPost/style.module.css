@@ -2,4 +2,19 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 19px;
+  min-height: 80vh;
+  background-color: transparent;
+}
+
+.postBlockBasicDark {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 19px;
+  min-height: 80vh;
+}
+
+.btnNext {
+  margin-left: 30px;
 }

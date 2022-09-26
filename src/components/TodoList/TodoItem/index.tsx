@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Button } from "../../Button";
 import styles from "./style.module.css";
 

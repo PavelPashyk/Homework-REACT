@@ -43,4 +43,7 @@
 
 .TodoItemHeader input {
   transform: scale(2);
+  width: 15px;
+  cursor: pointer;
+  height: 15px;
 }

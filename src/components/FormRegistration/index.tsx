@@ -3,13 +3,15 @@ import { FormTitle } from "../FormTitle";
 import { Input } from "../Input";
 import styles from "./style.module.css";
 
-export const FormLogin = () => {
+export const FormRegistration = () => {
   return (
     <Container>
       <div className={styles.form}>
         <FormTitle />
         <div className={styles.formBlock}>
           <form action="#">
+            <p>User name</p>
+            <Input type="text" name="user" className={styles.formInputStyle} />
             <p>Email</p>
             <Input
               type="email"
@@ -22,6 +24,8 @@ export const FormLogin = () => {
               name="password"
               className={styles.formInputStyle}
             />
+            <p>Confirm Password</p>
+            <Input type="password" className={styles.formInputStyle} />
             <Input
               type="submit"
               value={"Login"}
@@ -30,7 +34,7 @@ export const FormLogin = () => {
           </form>
         </div>
         <p>
-          Forgot your password? <span>Reset password</span>
+          If you have account, you can <span>login</span>
         </p>
       </div>
     </Container>
