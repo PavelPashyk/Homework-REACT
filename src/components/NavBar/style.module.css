@@ -7,6 +7,14 @@
   display: flex;
 }
 
+.navBarMenuDark {
+  width: 100%;
+  min-height: 200px;
+  background-color: #1f4873;
+  padding: 50px;
+  display: flex;
+}
+
 .navBarBtn {
   width: 30px;
   height: 30px;

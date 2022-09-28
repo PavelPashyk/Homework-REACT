@@ -1,0 +1,24 @@
+.bodyBlock  {
+  max-width: 1498px;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Container/backgroundBody.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 1;
+}
+
+.bodyBlockDark {
+  max-width: 1498px;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: dimgray;
+  background-image: url("../Container/backgroundBody.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 1;
+}

@@ -18,7 +18,43 @@
 .headerTop {
   width: inherit;
   min-height: inherit;
-  background-color: white;
+  background-color: #edf3ff;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.headerBlock {
+  display: flex;
+  width: inherit;
+  min-height: inherit;
+  align-items: center;
+}
+
+.btnThemaDarc {
+  width: 150px;
+  height: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  background-color: #0008ff;
+  border: 2px solid white;
+  color: rgb(246, 21, 21);
+}
+
+.btnThema {
+  width: 150px;
+  height: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  background-color:  #007bff;
+  color: white;
+  border: 2px solid black;
+}
+
+.headerTopDark {
+  width: inherit;
+  min-height: inherit;
+  background-color: #3c3333;
   display: flex;
   align-items: center;
   padding-left: 50px;

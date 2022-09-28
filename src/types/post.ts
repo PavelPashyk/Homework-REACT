@@ -1,8 +1,8 @@
 export interface IPost {
   id: number;
-  imgage?: string;
+  image?: string;
   text?: string;
-  data: string;
+  date: string;
   lesson_num: number;
   title: string;
   autor: number;
