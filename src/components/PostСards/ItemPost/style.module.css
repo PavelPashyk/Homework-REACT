@@ -17,8 +17,9 @@
 }
 
 .largePostBlock {
-  width: 600px;
-  height: 450px;
+  width: 700px;
+  height: 550px;
+  margin: 0 auto;
 }
 
 .postBlockDark {
@@ -43,8 +44,9 @@
 }
 
 .largePostBlockInner {
-  width: 550px;
-  height: 400px;
+  width: 650px;
+  height: 500px;
+  margin: 0 auto;
 }
 
 .postImg {
@@ -55,7 +57,7 @@
 }
 
 .largePostImg {
-  height: 250px;
+  height: 350px;
 }
 
 .postImg img {
@@ -88,6 +90,11 @@ img {
 .postText {
   color: #979797;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .postDate {

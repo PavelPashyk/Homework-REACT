@@ -1,0 +1,43 @@
+.btnNext {
+  margin: 0 0 30px 30px;
+}
+
+.inputSearchBlock {
+  margin: 20px;
+}
+
+.inputSearchTitle {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #016efc;
+  font-weight: 700;
+}
+
+.inputSearch {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  outline: none;
+  border-radius: 10px;
+  border-color: #016efc;
+  background: rgba(154, 247, 238, 0.3);
+}
+
+.inputSearch:focus {
+  border: 2px solid #0554bc;
+}
+
+.inputSearch::placeholder {
+  color: #016efc;
+}
+
+.blockIsLoading {
+  background-image: url("./4dc11d17f5292fd463a60aa2bbb41f6a.gif");
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-25%);
+}

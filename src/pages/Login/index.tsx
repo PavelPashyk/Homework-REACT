@@ -6,7 +6,6 @@ export const Login = () => {
   return (
     <>
       <Header />
-
       <FormLogin />
     </>
   );

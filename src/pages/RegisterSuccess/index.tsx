@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { FormInnerBlock } from "../../components/FormInnerBlock";
 import { Header } from "../../components/Header";
 import styles from "./style.module.css";
 
-export const RegisterSuccuss = () => {
+export const RegisterSuccess = () => {
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate("/");
+  };
+
   return (
     <>
       <Header />
@@ -14,7 +21,7 @@ export const RegisterSuccuss = () => {
         textDown={"Please, check your email"}
         children={"test@gmail.com"}
         link={"#"}
-        onClick={() => {}}
+        onClick={navigateToHome}
         textBtn={"Home"}
       />
     </>

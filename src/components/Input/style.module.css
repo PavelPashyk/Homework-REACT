@@ -5,9 +5,36 @@
   outline: none;
   border-radius: 5px;
   border-color: white;
-  
 }
 
 .input:focus {
   border: 2px solid grey;
 }
+
+.blockInput {
+  position: relative;
+}
+
+.errorText {
+  position: absolute;
+  left: 260px;
+  bottom: 5%;
+  min-width: 350px;
+  height: 50px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.errorText {
+  color: red;
+}
+
+/* .input:invalid {
+  border: 1px solid red;
+}
+
+.input:valid {
+  border: 10px solid blue;
+} */
