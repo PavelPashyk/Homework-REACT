@@ -2,8 +2,7 @@
   max-width: 1498px;
   min-height: 900px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   background-image: url("../Container/backgroundBody.png");
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -14,8 +13,7 @@
   max-width: 1498px;
   min-height: 900px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   background-color: dimgray;
   background-image: url("../Container/backgroundBody.png");
   background-repeat: no-repeat;

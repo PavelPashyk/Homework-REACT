@@ -9,7 +9,7 @@ interface IProps {
 }
 
 export const NavBar = ({ onClose }: IProps) => {
-  const { isDark, setIsDark } = useContext(Context);
+  const { isDark, setIsDark, user } = useContext(Context);
 
   return (
     <>
@@ -18,7 +18,9 @@ export const NavBar = ({ onClose }: IProps) => {
           <img src={icoClose} alt="close" className={styles.closeImg} />
         </button>
         <ul className={styles.navBarList}>
-          <li>
+          {user ? null : (
+            <>
+            <li>
             <Link to="/">All posts</Link>
           </li>
           <li>
@@ -26,6 +28,9 @@ export const NavBar = ({ onClose }: IProps) => {
               <a href="#">Login</a>
             </Link>
           </li>
+            </>
+          )}
+          
           <li>
             <Link to="/registration">
               <a href="#">

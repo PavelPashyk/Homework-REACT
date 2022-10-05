@@ -61,8 +61,8 @@ margin-top: 25px;
   font-weight: 500;
 }
 
-.formBlock p {
-  padding-bottom: 10px;
+.textErrorForm {
+  color: red;
 }
 
 .formInputStyleBtn:focus,

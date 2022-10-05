@@ -1,7 +1,7 @@
 import { IPost } from "../../../types/post";
 import styles from "./style.module.css";
 import image from "./no-photo.jpg";
-import { useContext } from "react";
+import { ReactEventHandler, useContext, useState } from "react";
 import { Context } from "../../../App";
 
 interface IProps extends IPost {
@@ -10,6 +10,12 @@ interface IProps extends IPost {
 
 export const ItemPost = (props: IProps) => {
   const { isDark, setIsDark } = useContext(Context);
+  const [pic, setPic] = useState(props.image);
+
+  const handleError: ReactEventHandler<HTMLImageElement> = () => {
+    
+    setPic(image)
+  };
 
   return (
     <div
@@ -27,10 +33,10 @@ export const ItemPost = (props: IProps) => {
             props.isLarge ? styles.largePostImg : ""
           }`}
         >
-          <img
-            src={props.image ? props.image : image}
+          <img onError={handleError}
+            src={pic ? pic : image}
             alt="Фотография"
-            title={props.image ? "Фотография" : "Фотография отсутствует ((("}
+            title={pic ? "Фотография" : "Фотография отсутствует ((("}
           />
         </div>
         <div className={styles.postContentBlock}>
