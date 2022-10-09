@@ -14,7 +14,7 @@ export const AllPosts = () => {
   const [allPost, setAllPost] = useState<IPost[]>([]);
   const [showLoadMore, setShowLoadMore] = useState(false);
   const [searchText, setSearchText] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const navigate = useNavigate();
 
@@ -22,27 +22,11 @@ export const AllPosts = () => {
     navigate(`/selected-post/${id}`);
   }
 
-  // useEffect(() => {
-  //   const promise = fetch(
-  //     "https://studapi.teachmeskills.by/blog/posts/?limit=12"
-  //   );
-
-  //   promise
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((value) => {
-  //       console.log(value);
-  //       setAllPost(value.results);
-  //     });
-  // }, []);
-
   const handleSearchText: ChangeEventHandler<HTMLInputElement> = (event) => {
     setSearchText(event.target.value);
   };
 
   useEffect(() => {
-    setIsLoading(true);
 
     fetchPosts(searchText, allPost.length)
       .then((value) => {

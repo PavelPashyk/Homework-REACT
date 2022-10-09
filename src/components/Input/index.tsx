@@ -4,7 +4,6 @@ import styles from "./style.module.css";
 interface IProps {
   value?: string | number;
   placeholder?: string;
-  maxlength?: number;
   onChange?: ChangeEventHandler<HTMLInputElement>;
   type?: string;
   name?: string;
@@ -15,6 +14,8 @@ interface IProps {
   onBlur?: () => void;
   required?: boolean;
   refObj?: any;
+  minLength?: number;
+  maxlength?: number;
 
 }
 
@@ -25,7 +26,6 @@ export const Input = (props: IProps) => {
       className={`${styles.input} ${props.className} ${props.error ? styles.error : ""}`}
       value={props.value}
       placeholder={props.placeholder}
-      maxLength={props.maxlength}
       onChange={props.onChange}
       onFocus={props.onFocus}
       onBlur={props.onFocus}
@@ -33,6 +33,9 @@ export const Input = (props: IProps) => {
       name={props.name}
       required={props.required}
       ref={props.refObj}
+      maxLength={props.maxlength}
+      minLength={props.minLength}
+
     ></input>
     <p className={styles.errorText}>{props.error}</p>
     </label>

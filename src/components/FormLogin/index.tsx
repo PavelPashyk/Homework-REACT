@@ -17,13 +17,16 @@ import { getUser, login } from "../../api/auth";
 export const FormLogin = () => {
   const refEmail: any = useRef(null);
   const refPassword: any = useRef(null);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const { setUser } = useContext(Context);
 
   const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
     event.preventDefault();
+
+    const formData = new FormData(event?.target as any);
+    const obj = Object.fromEntries(Array.from(formData.entries()));
+    const email: string = obj.email as string;
+    const password: string = obj.password as string;
 
     let isOk = true;
     login(email, password)
@@ -68,10 +71,6 @@ export const FormLogin = () => {
               className={styles.formInputStyle}
               required={true}
               refObj={refEmail}
-              value={email}
-              onChange={(event) => {
-                setEmail(event.target.value);
-              }}
             />
             <p>Password</p>
             <Input
@@ -80,10 +79,9 @@ export const FormLogin = () => {
               required={true}
               type="password"
               refObj={refPassword}
-              value={password}
-              onChange={(event) => {
-                setPassword(event.target.value);
-              }}
+              minLength={8}
+              maxlength={30}
+
             />
             <FormBtn
               className={styles.formInputStyleBtn}

@@ -25,7 +25,7 @@ export const FullPost = (props: IPost) => {
             date={props.date}
             lesson_num={props.lesson_num}
             title={props.title}
-            autor={props.autor}
+            author={props.author}
           />
         </div>
         <div className={styles.btnBack}>
