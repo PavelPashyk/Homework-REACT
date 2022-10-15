@@ -5,5 +5,5 @@ export interface IPost {
   date: string;
   lesson_num: number;
   title: string;
-  autor: number;
+  author: number;
 }

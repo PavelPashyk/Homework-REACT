@@ -6,6 +6,7 @@ import styles from "./style.module.css";
 
 export const Header = () => {
   const [isNavBarVisible, setIsNavBarVisible] = useState(false);
+  const {user} = useContext(Context);
 
   const openNavBar = () => {
     setIsNavBarVisible(true);
@@ -35,7 +36,7 @@ export const Header = () => {
                 <img src={icoMenu} alt="menu" className={styles.menuBtnImg} />
               </button>
               <img src={icoUser} alt="user" className={styles.menuTitleImg} />
-              <h2 className={styles.headerTitle}>Username</h2>
+              {user ? <h2 className={styles.headerTitle}>{user?.username}</h2> : null}
             </div>
             <button
               className={isDark ? styles.btnThemaDarc : styles.btnThema}

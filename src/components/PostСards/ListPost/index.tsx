@@ -21,20 +21,17 @@ export const PostCards = (props: IProps) => {
   const { isDark, setIsDark } = useContext(Context);
 
   return (
-    <>
       <div>
         <div
           className={isDark ? styles.postBlockBasicDark : styles.postBlockBasic}
         >
-          {props.posts.map((item) => {
+          {props.posts.length !== 0 ? props.posts.map((item) => {
             const clickPost = () => {
               props.onClickPost(item.id);
             };
 
-            const loadMore = () => {};
-
             return (
-              <div onClick={clickPost}>
+              <div key={item.id} onClick={clickPost}>
                 <ItemPost
                   title={item.title}
                   image={item.image}
@@ -42,15 +39,14 @@ export const PostCards = (props: IProps) => {
                   date={item.date}
                   id={item.id}
                   lesson_num={item.lesson_num}
-                  autor={item.autor}
+                  author={item.author}
                 />
               </div>
             );
-          })}
+          }) : (<p>No posts</p>)}
         </div>
         {/* <FullPost id={listPosts[0].id} image={listPosts[0].image} date={listPosts[0].date} lesson_num={listPosts[0].lesson_num} text={listPosts[0].text} title={listPosts[0].title} autor={listPosts[0].autor}/> */}
         {/* <FullPost {...listPosts[0]}/> */}
       </div>
-    </>
   );
 };

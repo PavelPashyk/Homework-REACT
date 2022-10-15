@@ -1,6 +1,6 @@
 import { error } from "console";
 import { ChangeEventHandler, useState } from "react";
-import { registerUser } from "../../api/auth";
+import { getUser, registerUser } from "../../api/auth";
 import {
   validateEmail,
   validateUser,
@@ -168,6 +168,8 @@ export const FormRegistration = () => {
               value={password}
               onChange={handlePassword}
               error={passwordError}
+              minLength={8}
+              maxlength={30}
             />
             <p>Confirm Password</p>
             <Input
